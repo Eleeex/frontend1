@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ProductDescription = () => {
   return (
@@ -9,11 +9,11 @@ const ProductDescription = () => {
         <button className='btn-dark-outline rounded-sm !text-xs !py-[6px] w-36'>Size Guide</button>
       </div>
       <div className='flex flex-col pb-16'>
-        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem hic repellendus delectus autem debitis consequuntur natus, a aspernatur molestias, nesciunt error animi, voluptate explicabo adipisci sit qui quasi illo ipsa?</p>
-        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, tempore laborum, nulla, consequuntur neque ipsum aspernatur nesciunt dolor excepturi quaerat quidem iure ducimus impedit esse eaque sunt vitae nemo. Explicabo?</p>
+        <p className='text-sm'>Explore the intricate details and quality craftsmanship of our product. Learn about its materials, features, and design elements to make an informed purchase decision.</p>
+        <p className='text-sm'>Care for your item to ensure its longevity. Discover our care guide for tips on cleaning, storing, and maintaining your purchase to keep it looking and functioning its best.</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default ProductDescription
+export default ProductDescription;

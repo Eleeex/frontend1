@@ -1,17 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import user from '../assets/user.svg';
+import logout from  '../assets/logout.svg'
 import Navbar from './Navbar';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { RiShoppingCart2Line } from 'react-icons/ri';
+import { ShopContext } from '../context/ShopContext';
 
 const Header = () => {
     const [menuOpened, setMenuOpened] = useState(false);
-
     const toggleMenu = () => {
         setMenuOpened(!menuOpened);
     };
+
+    const { getTotalCartItems } = useContext(ShopContext);
+
         useEffect(() => {
             const handleScroll = () => {
                 if (window.scrollY > 0) {
@@ -66,18 +70,23 @@ const Header = () => {
 
                         <div className="flexBetween sm:gap-x-6">
                             {/* Shopping Cart Icon */}
-                            <NavLink to="/cart" className="flex">
+                            <NavLink to="/cart-page" className="flex">
                                 <RiShoppingCart2Line className="p-2 h-10 w-10 hover:text-secondary" />
                                 <span className="relative flexCenter w-5 h-5 rounded-full bg-secondary text-primary medium-14 -top-2 right-3">
-                                    {0}
+                                    {getTotalCartItems()}
                                 </span>
                             </NavLink>
 
                             {/* User Login Button */}
+                           { localStorage.getItem('auth-token')?
+                           <NavLink onClick={()=>{localStorage.removeItem('auth-token'); window.location.replace('/')}} to="/logour" className="btn-secondary gap-x-2 medium-16 rounded-xl flex items-center">
+                                <img src={logout} alt="User Icon" className="h-6 w-6" />
+                                <span>logout</span>
+                                </NavLink>:
                             <NavLink to="/login" className="btn-secondary gap-x-2 medium-16 rounded-xl flex items-center">
-                                <img src={user} alt="User Icon" className="h-6 w-6" />
-                                <span>Login</span>
-                            </NavLink>
+                            <img src={user} alt="User Icon" className="h-6 w-6" />
+                            <span>Login</span>
+                        </NavLink> }
 
                         </div>
                     </div>

@@ -11,7 +11,7 @@ const About = () => {
         <div className='flex-1'>
           <h3 className='h3 capitalize'>Unveiling Our Product's Key Features!</h3>
           <p className='py-5 medium-15'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sunt quia voluptates animi error! Harum numquam necessitatibus porro nemo praesentium tenetur cupiditate optio dicta a voluptatibus officia illum, ipsam tempora.
+            Get to know the exceptional features that set our product apart. We're committed to providing you with a seamless shopping experience, and these key features are designed to make your journey effortless and enjoyable.
           </p>
           
           {/* Key Features */}
@@ -23,7 +23,7 @@ const About = () => {
               </div>
               <div className='mt-4'>
                 <h4 className='medium-18'>Easy Returns Process</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Enjoy hassle-free returns with our easy returns process. We prioritize your satisfaction and make returning items a breeze.</p>
               </div>
             </div>
             
@@ -34,7 +34,7 @@ const About = () => {
               </div>
               <div className='mt-4'>
                 <h4 className='medium-18'>Secure Payment Options</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Shop with confidence knowing that your payments are secure. We offer a variety of secure payment options to protect your personal information.</p>
               </div>
             </div>
             
@@ -45,7 +45,7 @@ const About = () => {
               </div>
               <div className='mt-4'>
                 <h4 className='medium-18'>Live Customer Support</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Receive real-time assistance from our dedicated customer support team. We're here to help you with any questions or concerns you may have.</p>
               </div>
             </div>
           </div>

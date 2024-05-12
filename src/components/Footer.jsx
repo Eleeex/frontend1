@@ -32,7 +32,7 @@ const Footer = () => {
 
         {/* Copyright Line */}
         <div className="text-sm text-gray-400">
-          Copyright &copy; Merchanza | All rights reserved.
+          Copyright &copy; Merchanza| All rights reserved.
         </div>
       </div>
     </footer>

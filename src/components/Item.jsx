@@ -17,7 +17,7 @@ const Item = ({ id, name, image, old_price, new_price }) => {
       </div>
       <div className="flex flex-col gap-y-3 pt-24">
         <h4 className="line-clamp-2 medium-16">{name}</h4>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+        <p>Discover more about this amazing product.</p>
         <div className="flexBetween">
           <div className="flex gap-x-4 medium-16">
             <span>${new_price}.00</span>
